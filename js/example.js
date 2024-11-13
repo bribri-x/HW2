@@ -6,14 +6,10 @@ var headingText = heading.firstChild.nodeValue;                    // h2 text
 var totalItems = listItems.length;                                 // No. of <li> elements
 var newHeading =  headingText + '<span>' + totalItems + '</span>'; // Content
 
-
 /*  WRITE YOUR CODE BELOW */
 
 
 // Part1. Hint: Use the listItems object to iterate through the elements of the list
-//const listItems = ["fresh figs", "bacon", "ketchup", "pine nuts", "honey", "kale", "balsamic vinegar"];
-
-
 for (let i = 0; i < totalItems; i++) {
    
     let item = listItems[i];
@@ -22,13 +18,7 @@ for (let i = 0; i < totalItems; i++) {
     }
 }
 
-
-
-
-
-
 // Part2. Hint: Use the heading and newHeading to show the number of items in the shopping list
-
 
 heading.innerHTML = newHeading;
 
